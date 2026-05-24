@@ -1,5 +1,5 @@
 ---
-title: Il Mio Sito Personale
+title: preeemo's website
 ---
 
 <link rel="stylesheet" href="style.css">
@@ -10,11 +10,11 @@ title: Il Mio Sito Personale
 
 # Pietro 👋
 
-Welcome to my website 
+Welcome to my website.  
 
-## my projects
-* proj 1
-## Contacts
+
+## contacts
+
 - [GitHub](https://github.com/preeemo).
 - name.surname[at]polimi.it
 
