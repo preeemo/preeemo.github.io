@@ -30,8 +30,26 @@ window.addEventListener('load', () => {
                 const seededY = y + randomSeedY;
 
                 // --- LA TUA EQUAZIONE ---
-                // Applichiamo (x ^ y) % 9
-                const value = (seededX ^ seededY) % 9;
+
+                randomSeed = Math.floor(Math.random() * 5);
+                if (randomSeed === 0) {
+                    const value = (seededX ^ seededY) % 9;
+                } 
+                else if (randomSeed === 1) {
+                    const value = ((seededX-128) * 64) % (seededY-128);
+                }
+                else if (randomSeed === 2) {
+                    const value = (seededX | seededY) % 17;
+                }
+                else if (randomSeed === 3) {
+                    const value = (seededX * 64) % seededY;
+                }
+                else {
+                    const value = (seededX * seededY) & 24;
+                }
+
+                
+                
 
                 // --- Interpretazione Binaria ---
                 // Decidiamo un "soglia" (es. se > 4) per definire acceso/spento.
