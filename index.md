@@ -1,5 +1,6 @@
 ---
-title: preeemo's website
+layout: default
+title: Home
 ---
 
 <link rel="stylesheet" href="style.css">
@@ -8,7 +9,7 @@ title: preeemo's website
 
 <div class="content-wrapper">
 
-# Pietro 👋
+# Pietro 
 
 Welcome to my website.  
 
