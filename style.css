@@ -8,32 +8,30 @@ body, html {
     font-family: 'Courier New', Courier, monospace; /* Stile "retro-tech" */
 }
 
-/* Stile del Canvas: fisso sullo sfondo */
+
+/* Il canvas rimane fisso e sotto tutto */
 #bgCanvas {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1; /* Mette il canvas SOTTO il contenuto */
+    z-index: -1;
     display: block;
 }
 
-/* Stile del contenuto sopra lo sfondo */
-.content-wrapper {
+
+/* Applichiamo un leggero sfondo semitrasparente al contenitore del tema 
+   per rendere il testo leggibile sopra i pixel generati */
+.container-lg, .wrapper, body {
     position: relative;
-    z-index: 1; /* Mette il contenuto SOPRA il canvas */
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    /* Aggiungiamo un leggero sfondo semitrasparente al testo
-       per massimizzare la leggibilità se lo sfondo diventa complesso */
-    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    padding: 20px;
     border-radius: 8px;
-    margin-top: 50px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 header, section {
     margin-bottom: 20px;
 }
+
