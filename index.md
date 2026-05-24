@@ -9,7 +9,9 @@ title: Home
 
 <div class="content-wrapper">
 
-# Pietro 
+
+</div>
+
 
 Welcome to my website.  
 
@@ -19,4 +21,3 @@ Welcome to my website.
 - [GitHub](https://github.com/preeemo).
 - name.surname[at]polimi.it
 
-</div>
