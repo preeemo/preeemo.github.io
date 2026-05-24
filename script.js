@@ -21,6 +21,8 @@ window.addEventListener('load', () => {
         // Puliamo il canvas
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+        // seed per variare l'equazione in modo casuale
+        randomSeed = Math.floor(Math.random() * 5);
         // Cicliamo attraverso i pixel, saltando in base alla 'scale'
         for (let x = 0; x < canvas.width; x += scale) {
             for (let y = 0; y < canvas.height; y += scale) {
@@ -31,7 +33,6 @@ window.addEventListener('load', () => {
 
                 // --- LA TUA EQUAZIONE ---
 
-                randomSeed = Math.floor(Math.random() * 5);
                 if (randomSeed === 0) {
                     const value = (seededX ^ seededY) % 9;
                 } 
